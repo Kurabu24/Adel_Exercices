@@ -10,6 +10,11 @@ def binary_addition():
             a=a[::-1]
             a+="0"
             a=a[::-1]
+    for j in range(len(a)):
+        if a[j] != 1 and a[j] !=0:
+            return TypeError("the variable a must be binaries")
+        elif b[j] != 0 and b[j] !=1:
+            return TypeError("the variable b must be binaries")
     max = len(a)
     c=0
     result= ""
