@@ -3,18 +3,9 @@ def binary_addition():
     b = input("enter the second binary number \n")
     while len(a) != len(b):
         if len(a) > len(b):
-            b=b[::-1]
-            b+="0"
-            b=b[::-1]
+            b = '0' + b
         elif len(a) < len(b):
-            a=a[::-1]
-            a+="0"
-            a=a[::-1]
-    for j in range(len(a)):
-        if a[j] != 1 and a[j] !=0:
-            return TypeError("the variable a must be binaries")
-        elif b[j] != 0 and b[j] !=1:
-            return TypeError("the variable b must be binaries")
+            a = '0' + b
     max = len(a)
     c=0
     result= ""
