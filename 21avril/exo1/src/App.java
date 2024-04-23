@@ -14,5 +14,6 @@ public class App {
         System.out.println(helper.pageIndex(2)); // should == 0
         System.out.println(helper.pageIndex(20)); // should == -1
         System.out.println(helper.pageIndex(-10)); // should == -1
+        System.out.println(helper.toString(helper.itemsInPage(1)));
     }
 }

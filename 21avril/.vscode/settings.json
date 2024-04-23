@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "exo2/src",
+        "exo1/src",
+        "exo4/src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}
