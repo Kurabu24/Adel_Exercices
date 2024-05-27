@@ -8,8 +8,10 @@ public class Fraction {
         this.reduceFrac();
     }
 
-    private int getPGCD(int denum1, int denum2) {
+    private int getPGCD(int num1, int num2) {
         int c;
+        int denum1 = Integer.max(num1, num2);
+        int denum2 = Integer.min(num2, num1);
         while (denum2 != 0) {
             c = denum2;
             denum2 = denum1 % denum2;

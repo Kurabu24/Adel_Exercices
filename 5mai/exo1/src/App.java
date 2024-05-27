@@ -1,15 +1,10 @@
 public class App {
-    int digitCount = 0;
-    public int count(double n){
-        if(n*n < 1){
-            int result = digitCount;
-            digitCount = 0;
-            return result;
+    public int count(int n){
+        if(n/10 == 0 ){
+            return 1;
         }
         else{
-            digitCount ++;
-            n = n/10;
-            return count(n);
+            return  1 + count(n/10);
         }
 
     }
